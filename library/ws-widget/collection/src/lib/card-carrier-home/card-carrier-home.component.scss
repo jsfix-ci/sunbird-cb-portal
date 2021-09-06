@@ -57,6 +57,7 @@
 
   mat-card-content {
     margin: 0 -0.25 * $card-padding;
+    
   }
 
   .card-img {
@@ -217,6 +218,9 @@
   height: 58px;
   max-height: 58px;
   overflow-y: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: initial;
 }
 
 .mat-card-footer {
