@@ -147,7 +147,6 @@ export class BtnPageBackComponent extends WidgetBaseComponent
   }
 
   hasRole(role: string[]): boolean {
-    console.log(this.configSvc.userRoles)
     let returnValue = false
     role.forEach(v => {
       if ((this.configSvc.userRoles || new Set()).has(v)) {
