@@ -15,7 +15,7 @@ export class KnowledgeCardComponent implements OnInit {
 
   @Input() resource!: any
   @Output() resourceBookmarkEvent = new EventEmitter<NSKnowledgeResource.IResourceData>()
-  time:number | undefined
+  time: number | undefined
 
   constructor(
     private kwResources: KnowledgeResourceService,

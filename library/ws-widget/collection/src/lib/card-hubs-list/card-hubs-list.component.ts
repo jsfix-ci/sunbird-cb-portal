@@ -54,7 +54,6 @@ export class CardHubsListComponent extends WidgetBaseComponent
 
   // private readonly featuresConfig: IGroupWithFeatureWidgets[] = []
 
-
   constructor(private configSvc: ConfigurationsService,
               private discussUtilitySvc: DiscussUtilsService,
               private router: Router,
@@ -157,7 +156,6 @@ export class CardHubsListComponent extends WidgetBaseComponent
     this.visible = !this.visible
   }
 
-
   hasRole(role: string[]): boolean {
     let returnValue = false
     role.forEach(v => {
@@ -168,9 +166,9 @@ export class CardHubsListComponent extends WidgetBaseComponent
     return returnValue
   }
 
-  isAllowed(portalName:string) {
-    const roles =  _.get(environment.otherPortalRoles, portalName) || []
-    if(!(roles && roles.length))  {
+  isAllowed(portalName: string) {
+  const roles =  _.get(environment.otherPortalRoles, portalName) || []
+    if (!(roles && roles.length))  {
       return true
     }
     const value = this.hasRole(roles)

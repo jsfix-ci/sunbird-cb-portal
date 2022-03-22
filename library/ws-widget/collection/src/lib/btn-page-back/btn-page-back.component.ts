@@ -156,9 +156,9 @@ export class BtnPageBackComponent extends WidgetBaseComponent
     return returnValue
   }
 
-  isAllowed(portalName:string) {
+  isAllowed(portalName: string) {
     const roles =  _.get(environment.otherPortalRoles, portalName) || []
-    if(!(roles && roles.length))  {
+    if (!(roles && roles.length))  {
       return true
     }
     const value = this.hasRole(roles)

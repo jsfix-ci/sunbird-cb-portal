@@ -23,7 +23,6 @@ export class KnowledgeAllComponent implements OnInit, OnDestroy {
   public screenSizeIsLtMedium = false
   sticky = false
   searchText = ''
-  
 
   mode$ = this.isLtMedium$.pipe(map((isMedium: any) => (isMedium ? 'over' : 'side')))
 
@@ -51,8 +50,6 @@ export class KnowledgeAllComponent implements OnInit, OnDestroy {
     }
 
   }
-
-
 
   refresh() {
         this.kwResources.getAllResources().subscribe((reponse: NSKnowledgeResource.IResourceResponse) => {
