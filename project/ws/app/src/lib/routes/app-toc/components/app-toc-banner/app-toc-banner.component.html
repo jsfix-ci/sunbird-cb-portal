@@ -20,9 +20,15 @@
                         <h1 class="mat-headline margin-remove-bottom padding-bottom-xs block sm:hidden" [title]="content?.name">
                             {{ content?.name }}
                         </h1>
+
                         <span *ngIf="contentProgress === 1" class="margin-left-s">
-                <mat-icon class="ws-mat-accent-text">check_circle</mat-icon>
-              </span>
+                          <mat-icon class="ws-mat-accent-text">check_circle</mat-icon>
+                        </span>
+
+                        <p class="mat-body-1 margin-remove-bottom padding-bottom-xs block" [title]="content?.description">
+                          {{ content?.description }}
+                        </p>
+
                         <div [ngSwitch]="routePath" class="header-meta" [ngClass]="{ 'header-meta-banner': bannerUrl }">
                             <!-- Overview Section -->
                             <div class="banner-overview-container" [hidden]="!content?.purpose && showSubtitleOnBanner" *ngSwitchCase="'overview'">

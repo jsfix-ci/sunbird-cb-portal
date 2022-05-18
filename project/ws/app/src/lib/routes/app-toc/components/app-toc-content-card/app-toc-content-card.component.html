@@ -44,7 +44,7 @@
                 [imageHeight]="24" [imageWidth]="24" [showBackground]="false" [outerStrokeLinecap]="'butt'">
               </circle-progress>
               <!-- <ws-widget-content-progress *ngIf="content?.identifier" [forPreview]="forPreview"
-                [contentId]="content?.identifier" class="progress-bar-thin" [progress]="100" 
+                [contentId]="content?.identifier" class="progress-bar-thin" [progress]="100"
                 [progressType]="'percentage'">
               </ws-widget-content-progress> -->
             </ng-container>
@@ -59,7 +59,7 @@
                 [outerStrokeLinecap]="'butt'">
               </circle-progress>
               <!-- <ws-widget-content-progress *ngIf="content?.identifier" [forPreview]="forPreview"
-                [contentId]="content?.identifier" class="progress-bar-thin" [progress]="content?.completionPercentage" 
+                [contentId]="content?.identifier" class="progress-bar-thin" [progress]="content?.completionPercentage"
                 [progressType]="'percentage'">
               </ws-widget-content-progress> -->
             </ng-container>
@@ -149,13 +149,13 @@
       <!-- <div class="w-100" *ngIf="content?.identifier && content?.completionPercentage">
         <ng-container *ngIf="content?.completionStatus == 2">
           <ws-widget-content-progress *ngIf="content?.identifier" [forPreview]="forPreview"
-            [contentId]="content?.identifier" class="progress-bar-thin" [progress]="100" 
+            [contentId]="content?.identifier" class="progress-bar-thin" [progress]="100"
             [progressType]="'percentage'">
           </ws-widget-content-progress>
         </ng-container>
         <ng-container *ngIf="content?.completionStatus < 2">
           <ws-widget-content-progress *ngIf="content?.identifier" [forPreview]="forPreview"
-            [contentId]="content?.identifier" class="progress-bar-thin" [progress]="content?.completionPercentage" 
+            [contentId]="content?.identifier" class="progress-bar-thin" [progress]="content?.completionPercentage"
             [progressType]="'percentage'">
           </ws-widget-content-progress>
         </ng-container>
@@ -188,7 +188,7 @@
     <!-- </div> -->
 
     <div class="flex flex-col sm:flex-row flex-between width-expand pr-0 w-100 sm:pr-4 sm:w-auto">
-      <a [routerLink]="isAllowed ? resourceLink.url : null" [queryParams]="isAllowed ? resourceLink.queryParams : null">
+      <a [routerLink]="isAllowed ? resourceLink.url : null" [queryParams]="isAllowed ? resourceLink.queryParams : null" class="left_text_box">
         <div class="text-truncate cursor-pointer" (click)="viewChildren = !viewChildren; raiseTelemetry()">
           <div class="flex flex-col sm:flex-row flex-wrap">
             <p class="margin-remove text-truncate mat-subheading-1 flex-auto">
@@ -201,7 +201,7 @@
             <!-- <span class="ml-5"> -->
             <!-- <ng-container *ngIf="content?.displayContentType">&nbsp;&nbsp;|&nbsp;&nbsp;</ng-container> -->
             <!-- <mat-icon class="time-icon">schedule</mat-icon> -->
-            <img src="/assets/icons/content/grey/video.svg" alt="Video" class="float-left margin-right-xs" *ngIf="content?.mimeType === 'video/mp4' || content?.mimeType === 'video/x-youtube' ||  
+            <img src="/assets/icons/content/grey/video.svg" alt="Video" class="float-left margin-right-xs" *ngIf="content?.mimeType === 'video/mp4' || content?.mimeType === 'video/x-youtube' ||
                 content?.mimeType ==='application/x-mpegURL'">
             <img src="/assets/icons/content/grey/audio.svg" alt="Audio" class="float-left margin-right-xs"
               *ngIf="content?.mimeType === 'audio/mpeg'">
@@ -220,7 +220,7 @@
           </div>
         </div>
       </a>
-      <div class="flex flex-wrap items-center justify-start sm:justify-end">
+      <div class="flex flex-wrap items-center justify-start sm:justify-end right_icon_box">
         <!-- <div class="type-container resource" *ngIf="content?.contentType === 'Resource'">
           <mat-icon class="mr-1 custom-icon rotate-90">call_to_action</mat-icon>
           <span>Resource</span>
@@ -244,7 +244,7 @@
               [imageHeight]="24" [imageWidth]="24" [showBackground]="false" [outerStrokeLinecap]="'butt'">
             </circle-progress>
             <!-- <ws-widget-content-progress *ngIf="content?.identifier" [forPreview]="forPreview"
-                [contentId]="content?.identifier" class="progress-bar-thin" [progress]="100" 
+                [contentId]="content?.identifier" class="progress-bar-thin" [progress]="100"
                 [progressType]="'percentage'">
               </ws-widget-content-progress> -->
           </ng-container>
@@ -258,7 +258,7 @@
               [imageHeight]="24" [imageWidth]="24" [showBackground]="false" [outerStrokeLinecap]="'butt'">
             </circle-progress>
             <!-- <ws-widget-content-progress *ngIf="content?.identifier" [forPreview]="forPreview"
-              [contentId]="content?.identifier" class="progress-bar-thin" [progress]="content?.completionPercentage" 
+              [contentId]="content?.identifier" class="progress-bar-thin" [progress]="content?.completionPercentage"
               [progressType]="'percentage'">
             </ws-widget-content-progress> -->
           </ng-container>
